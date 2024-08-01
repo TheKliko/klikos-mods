@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f20041">
+
+    <meta property="og:title" content="Kliko's mods">
+    <meta property="og:description" content="Roblox mods made by Kliko">
+    <meta property="og:url" content="https://thekliko.github.io/klikos-mods/">
+    <meta property="og:image" content="/images/embed/open-graph.png">
+    <meta property="og:type" content="website">
+
+    <title>Kliko's mods</title>
+    <link rel="shortcut icon" href="images/logo/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.css" media="only screen and (min-width: 1369px)">
+    <link rel="stylesheet" href="css/home.css" media="only screen and (min-width: 1369px)">
+    <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 1368px)">
+    <link rel="stylesheet" href="css/home-mobile.css" media="only screen and (max-width: 1368px)">
+
+    <script src="js/main.js"></script>
+</head>
+<body class="">
+    <button id="desktop-darkmode-toggle" class="darkmode-toggle mobile-hidden" onclick="toggle_darkmode()">
+        <svg id="sun-hover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z"/></svg>
+        <svg id="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M375.7 19.7c-1.5-8-6.9-14.7-14.4-17.8s-16.1-2.2-22.8 2.4L256 61.1 173.5 4.2c-6.7-4.6-15.3-5.5-22.8-2.4s-12.9 9.8-14.4 17.8l-18.1 98.5L19.7 136.3c-8 1.5-14.7 6.9-17.8 14.4s-2.2 16.1 2.4 22.8L61.1 256 4.2 338.5c-4.6 6.7-5.5 15.3-2.4 22.8s9.8 13 17.8 14.4l98.5 18.1 18.1 98.5c1.5 8 6.9 14.7 14.4 17.8s16.1 2.2 22.8-2.4L256 450.9l82.5 56.9c6.7 4.6 15.3 5.5 22.8 2.4s12.9-9.8 14.4-17.8l18.1-98.5 98.5-18.1c8-1.5 14.7-6.9 17.8-14.4s2.2-16.1-2.4-22.8L450.9 256l56.9-82.5c4.6-6.7 5.5-15.3 2.4-22.8s-9.8-12.9-17.8-14.4l-98.5-18.1L375.7 19.7zM269.6 110l65.6-45.2 14.4 78.3c1.8 9.8 9.5 17.5 19.3 19.3l78.3 14.4L402 242.4c-5.7 8.2-5.7 19 0 27.2l45.2 65.6-78.3 14.4c-9.8 1.8-17.5 9.5-19.3 19.3l-14.4 78.3L269.6 402c-8.2-5.7-19-5.7-27.2 0l-65.6 45.2-14.4-78.3c-1.8-9.8-9.5-17.5-19.3-19.3L64.8 335.2 110 269.6c5.7-8.2 5.7-19 0-27.2L64.8 176.8l78.3-14.4c9.8-1.8 17.5-9.5 19.3-19.3l14.4-78.3L242.4 110c8.2 5.7 19 5.7 27.2 0zM256 368a112 112 0 1 0 0-224 112 112 0 1 0 0 224zM192 256a64 64 0 1 1 128 0 64 64 0 1 1 -128 0z"/></svg>
+        <svg id="moon-hover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/></svg>
+        <svg id="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M144.7 98.7c-21 34.1-33.1 74.3-33.1 117.3c0 98 62.8 181.4 150.4 211.7c-12.4 2.8-25.3 4.3-38.6 4.3C126.6 432 48 353.3 48 256c0-68.9 39.4-128.4 96.8-157.3zm62.1-66C91.1 41.2 0 137.9 0 256C0 379.7 100 480 223.5 480c47.8 0 92-15 128.4-40.6c1.9-1.3 3.7-2.7 5.5-4c4.8-3.6 9.4-7.4 13.9-11.4c2.7-2.4 5.3-4.8 7.9-7.3c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-3.7 .6-7.4 1.2-11.1 1.6c-5 .5-10.1 .9-15.3 1c-1.2 0-2.5 0-3.7 0c-.1 0-.2 0-.3 0c-96.8-.2-175.2-78.9-175.2-176c0-54.8 24.9-103.7 64.1-136c1-.9 2.1-1.7 3.2-2.6c4-3.2 8.2-6.2 12.5-9c3.1-2 6.3-4 9.6-5.8c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-3.6-.3-7.1-.5-10.7-.6c-2.7-.1-5.5-.1-8.2-.1c-3.3 0-6.5 .1-9.8 .2c-2.3 .1-4.6 .2-6.9 .4z"/></svg>
+    </button>
+    <header>
+        <div id="header-branding">
+            <img src="images/logo/logo.png" alt="Logo">
+            <p class="mobile-hidden">Kliko's mods</p>
+        </div>
+
+        <nav id="header-navigation" aria-label="primary menu">
+            <svg width="0" height="0">
+              <filter id="icon-shadow-filter">
+                <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="rgba(98, 101, 105, 0.2)" />
+              </filter>
+            </svg>
+            <ul class="button-list">
+                <li>
+                    <a class="button navigation" href="#klikos-mod" onclick="hamburger_menu_toggle()">
+                        <p>Kliko's mod</p>
+                        <svg class="desktop-hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="button navigation" href="#bloxstrap-theme" onclick="hamburger_menu_toggle()">
+                        <p>Bloxstrap Theme</p>
+                        <svg class="desktop-hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="button navigation" href="#old-login" onclick="hamburger_menu_toggle()">
+                        <p>Old Login Screen</p>
+                        <svg class="desktop-hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="button navigation" href="#blue-emote" onclick="hamburger_menu_toggle()">
+                        <p>Blue Emote Wheel</p>
+                        <svg class="desktop-hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                    </a>
+                </li>
+                <!-- <li> -->
+                    <!-- <a class="button navigation" href="#elden-ring" onclick="hamburger_menu_toggle()"> -->
+                        <!-- <p>Elden Ring Death Sound</p> -->
+                        <!--<svg class="desktop-hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">--><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                    <!-- </a> -->
+                <!-- </li> -->
+                <li>
+                    <a class="button navigation" href="#pink-sky" onclick="hamburger_menu_toggle()">
+                        <p>Pink Skybox</p>
+                        <svg class="desktop-hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                    </a>
+                </li>
+                <li class="desktop-hidden button navigation">
+                    <button id="mobile-darkmode-toggle" class="darkmode-toggle" onclick="toggle_darkmode()">
+                        <svg id="mobile-sun-hover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z"/></svg>
+                        <svg id="mobile-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M375.7 19.7c-1.5-8-6.9-14.7-14.4-17.8s-16.1-2.2-22.8 2.4L256 61.1 173.5 4.2c-6.7-4.6-15.3-5.5-22.8-2.4s-12.9 9.8-14.4 17.8l-18.1 98.5L19.7 136.3c-8 1.5-14.7 6.9-17.8 14.4s-2.2 16.1 2.4 22.8L61.1 256 4.2 338.5c-4.6 6.7-5.5 15.3-2.4 22.8s9.8 13 17.8 14.4l98.5 18.1 18.1 98.5c1.5 8 6.9 14.7 14.4 17.8s16.1 2.2 22.8-2.4L256 450.9l82.5 56.9c6.7 4.6 15.3 5.5 22.8 2.4s12.9-9.8 14.4-17.8l18.1-98.5 98.5-18.1c8-1.5 14.7-6.9 17.8-14.4s2.2-16.1-2.4-22.8L450.9 256l56.9-82.5c4.6-6.7 5.5-15.3 2.4-22.8s-9.8-12.9-17.8-14.4l-98.5-18.1L375.7 19.7zM269.6 110l65.6-45.2 14.4 78.3c1.8 9.8 9.5 17.5 19.3 19.3l78.3 14.4L402 242.4c-5.7 8.2-5.7 19 0 27.2l45.2 65.6-78.3 14.4c-9.8 1.8-17.5 9.5-19.3 19.3l-14.4 78.3L269.6 402c-8.2-5.7-19-5.7-27.2 0l-65.6 45.2-14.4-78.3c-1.8-9.8-9.5-17.5-19.3-19.3L64.8 335.2 110 269.6c5.7-8.2 5.7-19 0-27.2L64.8 176.8l78.3-14.4c9.8-1.8 17.5-9.5 19.3-19.3l14.4-78.3L242.4 110c8.2 5.7 19 5.7 27.2 0zM256 368a112 112 0 1 0 0-224 112 112 0 1 0 0 224zM192 256a64 64 0 1 1 128 0 64 64 0 1 1 -128 0z"/></svg>
+                        <svg id="mobile-moon-hover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/></svg>
+                        <svg id="mobile-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M144.7 98.7c-21 34.1-33.1 74.3-33.1 117.3c0 98 62.8 181.4 150.4 211.7c-12.4 2.8-25.3 4.3-38.6 4.3C126.6 432 48 353.3 48 256c0-68.9 39.4-128.4 96.8-157.3zm62.1-66C91.1 41.2 0 137.9 0 256C0 379.7 100 480 223.5 480c47.8 0 92-15 128.4-40.6c1.9-1.3 3.7-2.7 5.5-4c4.8-3.6 9.4-7.4 13.9-11.4c2.7-2.4 5.3-4.8 7.9-7.3c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-3.7 .6-7.4 1.2-11.1 1.6c-5 .5-10.1 .9-15.3 1c-1.2 0-2.5 0-3.7 0c-.1 0-.2 0-.3 0c-96.8-.2-175.2-78.9-175.2-176c0-54.8 24.9-103.7 64.1-136c1-.9 2.1-1.7 3.2-2.6c4-3.2 8.2-6.2 12.5-9c3.1-2 6.3-4 9.6-5.8c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-3.6-.3-7.1-.5-10.7-.6c-2.7-.1-5.5-.1-8.2-.1c-3.3 0-6.5 .1-9.8 .2c-2.3 .1-4.6 .2-6.9 .4z"/></svg>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+
+        <a id="header-hamburger" class="desktop-hidden" onclick="hamburger_menu_toggle()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+
+        <div id="header-action">
+            <ul class="button-list">
+                <li>
+                    <a class="button action mobile-url" href="https://github.com/TheKliko/klikos-mods/">View on GitHub</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+
+    <section id="hero-section">
+        <div class="content">
+            <div>
+                <h2>Roblox mods by TheKliko</h2>
+                <!-- <p>
+                    Updated versions of my mods can be found in the following Discord servers:
+                    <br>
+                    <a href="https://discord.gg/nEjUwdSP9P">Kliko's Modloader | Support</a>, 
+                    <a href="https://discord.gg/nKjV3mGq6R">Bloxstrap Stuff</a>
+                </p> -->
+                <ul class="button-list">
+                    <li>
+                        <a class="button action fill" href="https://thekliko.github.io/klikos-modloader/">Kliko's modloader</a>
+                    </li>
+                    <li>
+                        <a class="button action" href="https://github.com/TheKliko/klikos-mods/">View on GitHub</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <img src="images/logo/logo.png" alt="Logo">
+            </div>
+        </div>
+    </section>
+
+
+    <section id="klikos-mod">
+        <div class="content mod">
+            <h3>
+                <img class="logo" src="images/mods/klikos-mod/logo-white.png" alt="logo">
+                Kliko's mod
+            </h3>
+            <p>
+                My favourite mod. Gradient: #990000 -> ff006e with some custom icons.
+            </p>
+            <a class="mod-preview mobile-hidden" href="images/mods/klikos-mod/preview.png" target="_blank">
+                <img src="images/mods/klikos-mod/preview.png" alt="preview">
+                <i>mod preview</i>
+            </a>
+            <div class="mod-preview desktop-hidden">
+                <img src="images/mods/klikos-mod/preview.png" alt="preview">
+                <i>mod preview</i>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="bloxstrap-theme">
+        <div class="content mod">
+            <h3>
+                <img class="logo" src="images/mods/bloxstrap-theme/logo.png" alt="logo">
+                Bloxstrap Theme
+            </h3>
+            <p>
+                My first Roblox mod. A gradient theme based on <a href="https://github.com/pizzaboxer/bloxstrap/">Bloxstrap</a>, an open-source bootstrapper made by pizzaboxer.
+            </p>
+            <a class="mod-preview mobile-hidden" href="images/mods/bloxstrap-theme/preview.png" target="_blank">
+                <img src="images/mods/bloxstrap-theme/preview.png" alt="preview">
+                <i>mod preview</i>
+            </a>
+            <div class="mod-preview desktop-hidden">
+                <img src="images/mods/bloxstrap-theme/preview.png" alt="preview">
+                <i>mod preview</i>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="old-login">
+        <div class="content mod">
+            <h3>
+                Old Login Screen
+            </h3>
+            <p>
+                My attempt at remaking the 2017 login screen.
+            </p>
+            <a class="mod-preview mobile-hidden" href="images/mods/old-login/preview.png" target="_blank">
+                <img src="images/mods/old-login/preview.png" alt="preview">
+                <i>mod preview</i>
+            </a>
+            <div class="mod-preview desktop-hidden">
+                <img src="images/mods/old-login/preview.png" alt="preview">
+                <i>mod preview</i>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="blue-emote">
+        <div class="content mod">
+            <h3>
+                Blue Emote Wheel
+            </h3>
+            <p>
+                A blue emote wheel requested by @Ziondy on Discord
+            </p>
+            <a class="mod-preview mobile-hidden" href="images/mods/blue-emote/preview.png" target="_blank">
+                <img src="images/mods/blue-emote/preview.png" alt="preview">
+                <i>mod preview</i>
+            </a>
+            <div class="mod-preview desktop-hidden">
+                <img src="images/mods/blue-emote/preview.png" alt="preview">
+                <i>mod preview</i>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <section id="elden-ring">
+        <div class="content mod">
+            <h3>
+                Elden Ring Death Sound
+            </h3>
+            <p>
+                Plays the elden ring death sound effect when you die.
+            </p>
+            <div class="mod-preview">
+                <div class="iframe-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/AgtcU3ljtHo?si=Qdgfyw80Bxx6oTAL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <i>mod preview</i>
+            </div>
+        </div>
+    </section> -->
+
+
+    <section id="pink-sky">
+        <div class="content mod">
+            <h3>
+                Pink Skybox
+            </h3>
+            <p>
+                Only works on games that use the default skybox.
+            </p>
+            <a class="mod-preview mobile-hidden" href="images/mods/pink-sky/preview.png" target="_blank">
+                <img src="images/mods/pink-sky/preview.png" alt="preview">
+                <i>mod preview</i>
+            </a>
+            <div class="mod-preview desktop-hidden">
+                <img src="images/mods/pink-sky/preview.png" alt="preview">
+                <i>mod preview</i>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div id="footer-branding">
+            <div>
+                <img src="images/logo/logo.png" alt="Logo">
+                <p>Kliko's mods</p>
+            </div>
+            <a href="https://raw.githubusercontent.com/TheKliko/klikos-mods/main/LICENSE">View License</a>
+        </div>
+
+        <div>
+            <div id="footer-action">
+                <div>
+                    <p>Other</p>
+                    <nav aria-label="secondary menu">
+                        <ul class="button-list">
+                            <li>
+                                <a class="navigation" href="https://discord.gg/nEjUwdSP9P">Discord Server</a>
+                            </li>
+                            <li>
+                                <a class="navigation" href="https://github.com/TheKliko/klikos-mods/">View on GitHub</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+    
+            <div id="footer-navigation">
+                <div>
+                    <p>Navigation</p>
+                    <nav aria-label="secondary menu">
+                        <ul class="button-list">
+                            <li>
+                                <a class="navigation" href="#klikos-mod" onclick="hamburger_menu_toggle()">
+                                    Kliko's Mod
+                                </a>
+                            </li>
+                            <li>
+                                <a class="navigation" href="#bloxstrap-theme" onclick="hamburger_menu_toggle()">
+                                    Bloxstrap Theme
+                                </a>
+                            </li>
+                            <li>
+                                <a class="navigation" href="#old-login" onclick="hamburger_menu_toggle()">
+                                    Old Login Screen
+                                </a>
+                            </li>
+                            <li>
+                                <a class="navigation" href="#blue-emote" onclick="hamburger_menu_toggle()">
+                                    Blue Emote Wheel
+                                </a>
+                            </li>
+                            <!-- <li>
+                                <a class="navigation" href="#elden-ring" onclick="hamburger_menu_toggle()">
+                                    Elden Ring Death Sound
+                                </a>
+                            </li> -->
+                            <li>
+                                <a class="navigation" href="#pink-sky" onclick="hamburger_menu_toggle()">
+                                    Pink Skybox
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer-info">
+            <span>Website version: </span>
+            <span id="website-version">???</span>
+        </div>
+    </footer>
+</body>
+</html>
