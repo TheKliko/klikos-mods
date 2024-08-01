@@ -1,4 +1,4 @@
-const website_version = '1.0.0';
+const website_version = '1.0.1';
 
 window.onload = function onload() {
     var version_container = document.getElementById('website-version');
